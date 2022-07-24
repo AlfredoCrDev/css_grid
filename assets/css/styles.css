@@ -1,0 +1,169 @@
+.item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.item5,
+.item6,
+.item7 {
+  color: #000;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 7fr 3fr 3fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Menu Menu"
+    "Hero Hero Hero"
+    "Main . Imagen"
+    "Main . Extra"
+    "Banner Banner Banner";
+}
+
+.item1 {
+  background-color: #0e1628;
+  grid-area: Header;
+}
+
+.item2 {
+  background-color: #f13a4b;
+  grid-area: Menu;
+}
+
+.item3 {
+  background-color: #4685c4;
+  grid-area: Hero;
+}
+
+.item4 {
+  background-color: #223349;
+  grid-area: Main;
+}
+
+.item5 {
+  background-color: #bee3e5;
+  grid-area: Imagen;
+}
+
+.item6 {
+  background-color: #47bd99;
+  grid-area: Extra;
+}
+
+.item7 {
+  background-color: #ffd170;
+  grid-area: Banner;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 3fr 3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      "Hero Hero Hero"
+      "Menu Main Main"
+      "Menu Banner Banner"
+      "Menu Extra Image";
+  }
+
+  .item1 {
+    background-color: #0e1628;
+    grid-area: Header;
+  }
+
+  .item2 {
+    background-color: #f13a4b;
+    grid-area: Menu;
+  }
+
+  .item3 {
+    background-color: #4685c4;
+    grid-area: Hero;
+  }
+
+  .item4 {
+    background-color: #223349;
+    grid-area: Main;
+  }
+
+  .item5 {
+    background-color: #bee3e5;
+    grid-area: Image;
+  }
+
+  .item6 {
+    background-color: #47bd99;
+    grid-area: Extra;
+  }
+
+  .item7 {
+    background-color: #ffd170;
+    grid-area: Banner;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr 2fr 2fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      "Menu Menu Menu"
+      "Hero Hero Hero"
+      "Main Main Main"
+      "Banner Banner Banner"
+      "Extra Extra Extra"
+      "Image Image Image";
+  }
+
+  .item1 {
+    background-color: #0e1628;
+    grid-area: Header;
+  }
+
+  .item2 {
+    background-color: #f13a4b;
+    grid-area: Menu;
+  }
+
+  .item3 {
+    background-color: #4685c4;
+    grid-area: Hero;
+  }
+
+  .item4 {
+    background-color: #223349;
+    grid-area: Main;
+  }
+
+  .item5 {
+    background-color: #bee3e5;
+    grid-area: Image;
+  }
+
+  .item6 {
+    background-color: #47bd99;
+    grid-area: Extra;
+  }
+
+  .item7 {
+    background-color: #ffd170;
+    grid-area: Banner;
+  }
+}
